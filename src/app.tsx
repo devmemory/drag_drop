@@ -1,16 +1,11 @@
+import DragDrop from 'components/drag_drop'
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import routes from 'util/routes'
+import './app.css'
 
-const App = () => {
+export default () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                {routes.map((e, i) => (<Route key={`route-${i}`} path={e.path} element={e.element} />)
-                )}
-            </Routes>
-        </BrowserRouter>
+        <div className='div_main'>
+            <DragDrop/>
+        </div>
     )
 }
-
-export default App
