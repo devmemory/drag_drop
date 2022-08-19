@@ -31,7 +31,7 @@ export default () => {
         for (let i = 0; i < files.length; i++) {
             const file: File = files[i];
 
-            const format: string = `${file.type.split("/").slice(-1)}`.toUpperCase();
+            const format: string = `${file.name.split(".").slice(-1)}`.toUpperCase();
 
             if (
                 format === "JPG" ||
